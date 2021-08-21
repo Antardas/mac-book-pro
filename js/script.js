@@ -77,6 +77,7 @@ document.getElementById('promo-buttom').addEventListener('click', function () {
         discountTotalNumber = discountTotalNumber / 100 * 20;
         discountTotal.innerText = parseFloat(discountTotal.innerText) - discountTotalNumber;
         i = false;
+        document.getElementById('promo-input').value = '';
     }
 
 });
