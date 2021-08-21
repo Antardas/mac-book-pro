@@ -2,7 +2,6 @@
 function textToNumber(elementId) {
     const text = document.getElementById(elementId);
     const number = parseFloat(text.innerText);
-    console.log(number)
     return number;
 }
 
