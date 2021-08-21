@@ -26,46 +26,45 @@ function total() {
 }
 
 // Memory & Total Price Increase
+const memoryCost = document.getElementById('memory-cost');
 
 document.getElementById('memory-16GB').addEventListener('click', function () {
-    const memoryCost = document.getElementById('memory-cost');
     memoryCost.innerText = 180;
     total();
 
 });
 
 document.getElementById('memory-8GB').addEventListener('click', function () {
-    const memoryCost = document.getElementById('memory-cost');
     memoryCost.innerText = 0;
     total();
 });
 
 
 // Storage 1TB Price Increase
+const storageCost = document.getElementById('storage-cost');
 
 document.getElementById('storage-1TB').addEventListener('click', function () {
-    const storageCost = document.getElementById('storage-cost');
     storageCost.innerText = 180;
     total();
 })
 document.getElementById('storage-512GB').addEventListener('click', function () {
-    const storageCost = document.getElementById('storage-cost');
     storageCost.innerText = 100;
     total();
 })
 document.getElementById('storage-256GB').addEventListener('click', function () {
-    const storageCost = document.getElementById('storage-cost');
     storageCost.innerText = 0;
     total();
 })
+
+// Delivery Section
+const deliveryCost = document.getElementById('delivery-cost');
+
 document.getElementById('normal-delivery').addEventListener('click', function () {
-    const storageCost = document.getElementById('delivery-cost');
-    storageCost.innerText = 0;
+    deliveryCost.innerText = 0;
     total();
 })
 document.getElementById('first-delivery').addEventListener('click', function () {
-    const storageCost = document.getElementById('delivery-cost');
-    storageCost.innerText = 20;
+    deliveryCost.innerText = 20;
     total();
 })
 // Discount Price
