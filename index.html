@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <section class=" grid grid-cols-1 md:grid-cols-2 w-10/12 mx-auto my-10">
+        <section class=" grid grid-cols-1 lg:grid-cols-2 w-10/12 mx-auto my-10">
             <!-- Prodcut Image -->
             <div><img class="w-3/4 mx-auto" src="images/mac.png" alt=""></div>
 
@@ -28,55 +28,72 @@
                         US English</p>
                     <!-- memory Button -->
                     <h3 class="text-2xl mb-4">Memory</h3>
-                    <button
+                    <button id="memory-8GB"
                         class=" bg-black text-white py-1 px-3 rounded-2xl mr-4 my-4 focus:outline-none focus:ring-4 focus:ring-gray-500 focus:ring-opacity-50">8GB
                         unified memory</button>
-                    <button
+                    <button id="memory-16GB"
                         class=" bg-black text-white py-1 px-3 rounded-2xl mr-4 my-4 focus:outline-none focus:ring-4 focus:ring-gray-500 focus:ring-opacity-50">16GB
                         unified memory</button>
                     <!-- storage button -->
                     <h3 class="text-2xl mb-4 mt-10">Storage</h3>
-                    <button
+                    <button id="storage-256GB"
                         class=" bg-black text-white py-1 px-3 rounded-2xl mr-4 my-4 focus:outline-none focus:ring-4 focus:ring-gray-500 focus:ring-opacity-50">256
                         GB SSD Storage</button>
-                    <button
-                        class=" bg-black text-white py-1 px-3 rounded-2xl mr-4 my-4 focus:outline-none focus:ring-4 focus:ring-gray-500 focus:ring-opacity-50">256
+                    <button id="storage-512GB"
+                        class=" bg-black text-white py-1 px-3 rounded-2xl mr-4 my-4 focus:outline-none focus:ring-4 focus:ring-gray-500 focus:ring-opacity-50">512
                         GB SSD Storage</button>
-                    <button
+                    <button id="storage-1TB"
                         class=" bg-black text-white py-1 px-3 rounded-2xl mr-4 my-4 focus:outline-none focus:ring-4 focus:ring-gray-500 focus:ring-opacity-50">1
                         TB SSD Storage</button>
 
                     <!-- Delivery Button -->
                     <h3 class="text-2xl mb-4 mt-10">Choose Your Delivery Option</h3>
-                    <button
+                    <button id="normal-delivery"
                         class=" bg-black text-white py-1 px-3 rounded-2xl mr-4 my-4 focus:outline-none focus:ring-4 focus:ring-gray-500 focus:ring-opacity-50">wednesday,
                         Aug 25 FREE Prime Delivery</button>
-                    <button
+                    <button id="first-delivery"
                         class=" bg-black text-white py-1 px-3 rounded-2xl mr-4 my-4 focus:outline-none focus:ring-4 focus:ring-gray-500 focus:ring-opacity-50">Saturday,
                         Aug 22 Delivery Charge $20</button>
                 </div>
                 <!-- price section -->
                 <div class="grid grid-cols-2 w-3/4 ">
-                    <h3 class="text-2xl text-medium border-b-4">Best Price</h3>
-                    <h3 class="text-2xl text-medium border-b-4 text-right"> <span id="best-price">1229</span> </h3>
-                    <h3 class="text-2xl text-medium border-b-4">Extra Memory cost</h3>
-                    <h3 class="text-2xl text-medium border-b-4 text-right">$<span id="memory-cost">0</span></h3>
-                    <h3 class="text-2xl text-medium border-b-4">Extra Storage cost</h3>
-                    <h3 class="text-2xl text-medium border-b-4 text-right">$<span id="storage-cost">0</span></h3>
-                    <h3 class="text-2xl text-medium border-b-8">Extra Delivery cost</h3>
-                    <h3 class="text-2xl text-medium border-b-8 text-right">$<span id="delivery-cost">0</span></h3>
+                    <h3 class="text-2xl text-medium border-b-4 mb-5">Best Price</h3>
+                    <h3 class="text-2xl text-medium border-b-4 text-right mb-5"> <span id="best-price">1299</span> </h3>
+
+                    <h3 class="text-2xl text-medium border-b-4 mb-5">Extra Memory cost</h3>
+                    <h3 class="text-2xl text-medium border-b-4 text-right mb-5">$<span id="memory-cost">0</span></h3>
+
+                    <h3 class="text-2xl text-medium border-b-4 mb-5">Extra Storage cost</h3>
+                    <h3 class="text-2xl text-medium border-b-4 text-right mb-5">$<span id="storage-cost">0</span></h3>
+
+                    <h3 class="text-2xl text-medium border-b-8 mb-5">Extra Delivery cost</h3>
+                    <h3 class="text-2xl text-medium border-b-8 text-right mb-5">$<span id="delivery-cost">0</span></h3>
 
 
-                    <h3 class="text-2xl text-medium border-b-4">Total Price</h3>
+                    <h3 class="text-2xl text-medium  mb-5">Total Price</h3>
                     <h3 class="text-2xl text-medium  text-right">$<span id="total-price">1299</span></h3>
-                    <h3 class="text-2xl text-medium">Add Promo Code</h3>
-                    <input id="promo-input" type="text">
-                    <button id="promo-buttom" class="">Apply</button>
+                    <h3 class="text-2xl text-medium col-span-2">Add Promo Code</h3>
+                    <!-- add promo Key -->
+                    <div class="w-full flex col-span-2 mt-5">
+
+                        <input id="promo-input" class="border-2 w-3/4 mr-3 rounded-2xl focus:outline-none p-2 "
+                            type="text">
+                        <button id="promo-buttom"
+                            class="py-1 px-3 bg-red-400  inline-block w-1/4 rounded-2xl text-2xl text-white text-center">Apply</button>
+                    </div>
                 </div>
 
             </div>
         </section>
     </header>
+    <!-- Footer area -->
+    <footer>
+        <div class="border py-4">
+            <h1 class="text-4xl text-center">Total $<span id="discount-total">1299</span></h1>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
