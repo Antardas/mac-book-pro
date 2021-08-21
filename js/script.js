@@ -73,7 +73,7 @@ document.getElementById('promo-buttom').addEventListener('click', function () {
     const promoInput = document.getElementById('promo-input').value;
     const discountTotal = document.getElementById('discount-total');
     let discountTotalNumber = parseFloat(discountTotal.innerText);
-    if (promoInput == 'stevekaku' && i == true) {
+    if (promoInput.toLowerCase() == 'stevekaku' && i == true) {
         discountTotalNumber = discountTotalNumber / 100 * 20;
         discountTotal.innerText = parseFloat(discountTotal.innerText) - discountTotalNumber;
         i = false;
